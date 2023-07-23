@@ -393,6 +393,10 @@ body {
 
 .team {
   text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  width: 1600px;
+  background-color: #f5f4fa;
 }
 
 .team-title {
@@ -484,6 +488,7 @@ body {
 .clients {
   text-align: center;
   margin-bottom: 90px;
+  margin-top: 90px;
 }
 
 .clients-head {
@@ -501,7 +506,7 @@ body {
 }
 
 .clients-item {
-  width: calc((100%-150px) / 6);
+  width: calc((100% - 150px) / 6);
   margin-right: 30px;
   height: 92px;
   border: 1px solid #afb1b8;
@@ -534,7 +539,7 @@ body {
 
 .footer-wrap {
   background-color: #2f303a;
-  max-width: 1600px;
+  width: 1600px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -609,4 +614,60 @@ address {
 .footer-social-icon .social-icon:hover,
 .footer-social-icon .social-icon:focus {
   background-color: var(--hover-color);
+}
+
+.footer-label-wrap {
+  margin-left: 93px;
+}
+
+.footer-label {
+  display: flex;
+  flex-direction: column;
+
+  margin-top: 72px;
+  margin-bottom: 20px;
+
+  font-weight: 700;
+  font-size: 14px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+
+  color: #ffffff;
+}
+
+.footer-input {
+  width: 358px;
+  height: 50px;
+  padding-left: 16px;
+  padding-right: 16px;
+
+  color: var(--text-color);
+  background-color: #2f303a;
+  border: 1px solid var(--text-color);
+  border-radius: 4px;
+}
+
+.footer-button {
+  display: inline-flex;
+  align-items: center;
+
+  width: 200px;
+  height: 50px;
+  margin-left: 12px;
+  margin-top: 108px;
+  padding-left: 28px;
+
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+  letter-spacing: 0.06em;
+  background-color: var(--hover-color);
+  color: var(--big-title-color);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border: none;
+  border-radius: 4px;
+}
+
+.footer-button > svg {
+  margin-left: 10px;
 }
