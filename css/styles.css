@@ -269,6 +269,7 @@ body {
   position: absolute;
   top: 50%;
   left: 50%;
+  z-index: 1;
 
   width: 528px;
   height: 581px;
@@ -297,7 +298,96 @@ body {
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 50%;
 }
-/* features */
+
+.submit-modal {
+  margin-top: 30px;
+  width: 200px;
+  height: 50px;
+
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+  letter-spacing: 0.06em;
+
+  background-color: var(--hover-color);
+  color: var(--big-title-color);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border: none;
+  border-radius: 4px;
+}
+
+.modal-text {
+  margin-top: 40px;
+
+  font-weight: 700;
+  font-size: 20px;
+  letter-spacing: 0.03em;
+  color: var(--title-color);
+}
+
+.modal-field {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  box-sizing: content-box;
+
+  margin-top: 10px;
+  padding-left: 40px;
+  padding-right: 40px;
+}
+
+.modal-img {
+  position: absolute;
+  top: 45%;
+  left: 52px;
+}
+
+.modal-field:first-of-type {
+  margin-top: 12px;
+}
+
+.modal-field:last-of-type {
+  flex-direction: row;
+  padding-left: 52px;
+  margin-top: 20px;
+}
+
+.modal-field > input {
+  width: 100%;
+  height: 40px;
+  padding-left: 42px;
+  padding-right: 16px;
+}
+
+.modal-field > label {
+  font-size: 12px;
+  letter-spacing: 0.01em;
+  margin-bottom: 4px;
+}
+
+.modal-field:focus-within .modal-img {
+  fill: var(--hover-color);
+}
+
+.comment {
+  padding-left: 16px;
+  padding-right: 16px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  width: 100%;
+  height: 96px;
+}
+
+.modal-field > input[type="checkbox"] {
+  width: 16px;
+  height: 15px;
+  margin-right: 8px;
+}
+
+.modal-field a {
+  color: var(--hover-color);
+}
 
 .wrap-icon {
   height: 120px;
@@ -362,6 +452,7 @@ body {
   margin-right: 30px;
   margin-bottom: 94px;
   width: calc((100%-60px) / 3);
+  z-index: -1;
 }
 .our-work-item:last-child {
   margin-right: 0;
