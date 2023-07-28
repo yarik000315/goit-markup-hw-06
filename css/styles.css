@@ -134,7 +134,7 @@ body {
   position: relative;
   margin-right: 50px;
 
-  transition: color 5000ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .navigation-item:last-child {
@@ -299,6 +299,15 @@ body {
   border-radius: 50%;
 }
 
+.close-modal-icon {
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.close-modal:hover .close-modal-icon,
+.close-modal:focus .close-modal-icon {
+  fill: var(--hover-color);
+}
+
 .submit-modal {
   margin-top: 30px;
   width: 200px;
@@ -388,6 +397,40 @@ body {
 .modal-field a {
   color: var(--hover-color);
 }
+
+.policy-label {
+  margin-left: 22px;
+}
+
+.policy-input {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+}
+
+.our-check {
+  position: absolute;
+  width: 16px;
+  height: 15px;
+  left: 52px;
+  top: -2px;
+
+  border: 2px solid black;
+  border-radius: 4px;
+}
+
+.policy-input:checked + .our-check {
+  background-color: var(--hover-color);
+  border: none;
+}
+
+.our-check-icon {
+  margin-top: 4px;
+}
+
+/* Наші особливості */
 
 .wrap-icon {
   height: 120px;

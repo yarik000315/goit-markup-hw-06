@@ -46,7 +46,7 @@
       </div>
     </header>
     <main>
-          <section class="hero">
+      <section class="hero">
         <div class="wrapper-hero">
           <h1>ефективні рішення для <br />вашого бізнесу</h1>
           <button class="order" data-modal-open>Замовити послугу</button>
@@ -86,15 +86,22 @@
                 ></textarea>
               </div>
               <div class="modal-field">
-                <input type="checkbox" id="policy" name="policy" />
-                <label class="policy-label" for="policy"
-                  >Погоджуюся з розсилкою та приймаю
-                  <a href="#">Умови договору</a></label
-                >
+                <label class="policy-label"
+                  ><input class="policy-input" type="checkbox" name="policy" />
+                  <span class="our-check">
+                    <svg class="our-check-icon" width="11" height="8">
+                      <use href="./images/icon.svg#icon-checked-img"></use>
+                    </svg>
+                  </span>
+                  Погоджуюся з розсилкою та приймаю
+                  <a href="#">Умови договору</a>
+                </label>
               </div>
               <button class="submit-modal" type="submit">Відправити</button>
               <button data-modal-close class="close-modal">
-                <img src="./images/SVG/cross.svg" alt="" />
+                <svg class="close-modal-icon" width="11" height="11">
+                  <use href="./images/icon.svg#icon-cross"></use>
+                </svg>
               </button>
             </div>
           </div>
